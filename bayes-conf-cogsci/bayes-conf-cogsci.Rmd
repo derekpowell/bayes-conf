@@ -297,9 +297,9 @@ Rigorous investigations into _differential belief updating_ demand a psychologic
 [^2]:
      It is also worth noting that the failures of $l$ to generalize logical entailment can be quite naturally alleviated by defining $l$ in terms of its limits of $+ \infty$ or $- \infty$ wherever it would otherwise be undefined. 
      
-     {redacted for blind review} suggests to us a more principled way of achieving the same result that is based on a correction of an observation made by I.J. Good [-@Good1975]. It is known that the following measure is ordinally equivalent to $l$:$$K(H,E)=\frac{Pr(E \mid H)-Pr(E \mid \neg H)}{Pr(E \mid H)+Pr(E \mid \neg H)}$$ Further, it is known that putting the extreme cases aside:$$l(H,E)=2 \times \text{ArcTanh}\left(K(H,E)\right)$$But since according to the standard definition $\text{ArcTanh}(1)=+\infty$ and $\text{ArcTanh}(-1)=-\infty$. We may take the above to be a fully general new definition of $l$ that is defined in the extreme cases. 
+     Branden Fitelson suggests to us a more principled way of achieving the same result that is based on a correction of an observation made by I.J. Good [-@Good1975]. It is known that the following measure is ordinally equivalent to $l$:$$K(H,E)=\frac{Pr(E \mid H)-Pr(E \mid \neg H)}{Pr(E \mid H)+Pr(E \mid \neg H)}$$ Further, it is known that putting the extreme cases aside:$$l(H,E)=2 \times \text{ArcTanh}\left(K(H,E)\right)$$But since according to the standard definition $\text{ArcTanh}(1)=+\infty$ and $\text{ArcTanh}(-1)=-\infty$. We may take the above to be a fully general new definition of $l$ that is defined in the extreme cases. 
      
-[^3]: All materials and analysis code are available at {github link redacted for blind review}.
+[^3]: All materials and analysis code are available at https://github.com/derekpowell/bayes-conf.
 
 # References 
 
