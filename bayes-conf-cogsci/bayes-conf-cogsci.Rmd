@@ -9,13 +9,13 @@ author-information: >
     \AND {\large \bf Shyam Nair (gsnair@asu.edu)} \\ School of Historical, Philosophical, and Religious Studies \\ 975 S. Myrtle Ave \\ P.O. Box 874302 \\ Tempe, AZ 85287 USA}
 
 abstract: >
-    How can we quantify the degree to which a piece of evidence affects a person's belief? Philosophers investigating theories of _Bayesian Confirmation_ have identified a plurality of potential measures, each with their own virtues and shortcomings. Psychologists meanwhile have largely neglected this question, which has limited their ability to understand _differential belief updating_, cases where certain individuals or groups respond to the same evidence in different ways. In this study, we examine how competing Bayesian confirmation measures track commonsense notions of evidential strength. We demonstrate how these measures can be computed from participants' belief reports, and identify cases where the measures come apart in their characterization of participants' belief updating. In so doing, this project seeks to build a connections between investigations of psychological belief updating processes and formal epistemic theories of confirmation.
+    How can we quantify the degree to which a piece of evidence affects a person's belief? Philosophers investigating theories of _Bayesian Confirmation_ have identified a plurality of potential measures, each with their own virtues and shortcomings. Psychologists meanwhile have largely neglected this question, which has limited their ability to understand _differential belief updating_, cases where certain individuals or groups respond to the same evidence in different ways. In this study, we examine how competing Bayesian confirmation measures track commonsense notions of evidential strength. We demonstrate how these measures can be computed from participants' belief reports, and identify cases where the measures come apart in their characterization of participants' belief updating. In so doing, this project seeks to build connections between investigations of psychological belief updating processes and formal epistemic theories of confirmation.
     
 keywords: >
     Belief updating; Bayesian confirmation
     
 output: cogsci2016::cogsci_paper
-#final-submission: \cogscifinalcopy
+final-submission: \cogscifinalcopy
 header-includes:
   - \usepackage{float}
 ---
@@ -81,7 +81,7 @@ To begin, Eells and Fitelson [-@EF2002] use symmetries related to confirmation t
 
 - Communitivity Symmetry (CS): $\mathbf{c}(H,E)=-\mathbf{c}(E, H)$
 
-- Hypothesis Symmetry (HS): $\mathbf{c}(H,E)= \mathbf{c}(\neg H, E)$
+- Hypothesis Symmetry (HS): $\mathbf{c}(H,E)= \mathbf{c}(H, \neg E)$
 
 Eells and Fitelson argue ES and CS are not generally valid or desirable while HS is. To see this, they consider an example in which a card is drawn from a fair deck. Let $H$ be the claim that the card is black and $E$ be the claim that the card is a seven of spades. That the card is a seven of spades ($E$) is decisive evidence that the card is black ($H$). But that the card is not a seven of spades ($\neg E$) is not decisive evidence against the claim that the card is black ($H$). This falsifies ES, which claims that the degree to which $E$ confirms $H$ is equal to the degree to which $\neg E$ disconfirms.
 
@@ -175,14 +175,14 @@ A total of `r nrow(df_raw)` participants were recruited from Amazon Mechanical T
 
 ## Materials and procedures
 
-Four brief educational vignettes were created to correct common misconceptions about four different topics. The four topics were 1) the anthropogenic nature of climate change, 2) the dangers of skin contact with Fentanyl, 3) the economic impacts of major sports stadium construction, and 4) the effectiveness of education tailored to individual “learning styles”.
+Four brief educational vignettes were created to correct common misconceptions about four different topics. The four topics were 1) the anthropogenic nature of climate change, 2) the dangers of skin contact with Fentanyl, 3) the effectiveness of education tailored to individual “learning styles,” and 4) the economic impacts of major sports stadium construction.
 
 Each of these vignettes were designed to provide evidence for or against a more specific belief. Participants were asked to report their beliefs in terms of probabilities. For instance, evidence about the economic impacts of sports stadiums was paired with a question asking participants to judge the probability that a new sports stadium being built in Buffalo would generate enough tax revenue to pay a return on the public investment.
 
 Participants were asked about the topics in a randomized order. For each topic, participants made an initial probability judgment (pretest), then read the brief educational intervention, and then were asked to make a second probability judgment in light of what they had read (posttest). Then, in a second phase of the study, participants were asked to rate how persuasive they had found the evidence to be. These ratings were made on a Likert scale from "Not at all persuasive" to "Extremely persuasive".
 
 
-```{r fig2, fig.env = "figure*", fig.pos = "htb", fig.width=7, fig.height=3, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap='Average confirmation across persuasiveness ratings for each confirmation measure (facets) and topic (line colors). Error bars represent one standard error.'}
+```{r fig2, fig.env = "figure*", fig.pos = "htb", fig.width=7, fig.height=3, fig.align = "center", set.cap.width=T, num.cols.cap=2, fig.cap='Average confirmation across persuasiveness ratings for each confirmation measure (facets) and topic (line colors). Error bars represent one standard error. Persuasiveness ratings concern confirmatory evidence for the climate topic and disconfirmatory evidence for all others. Thus, a well-behaved measure would be indicated by a monotonically increasing trend for climate and monotonically decreasing trends for all other topics.'}
 
 my_palette <- c( "#0067B1","#FFAB6C",  "#A41881", "#4AABD3",  "#320A64",   "#FFD9C4", "#8A95A5" )
 # ggplot(tibble(x = 1:7), aes(x=x, y=1, fill=factor(x))) +
@@ -283,6 +283,8 @@ Finally, we consider some potential limitations and directions for future explor
 These interpretations may raise questions related to the philosophical problem of old evidence. The problem arises in cases where one already regards $P(E)$ to be close to $1$ but nonetheless sees $E$ as important evidence for $H$. It may be that some subjects already know about the evidence provided by the vignette, so they can be thought of as having $P(E)$ close to $1$---though $E$ might not shift their beliefs in $H$ in this moment, they might still regard it as highly persuasive. To be sure, cases like this are not unique to our experimental context: Glymour [-@Glymour1980] has argued that there are a number of prominent cases like this in the history of science. Many confirmation measures struggle to adequately deal with these kinds of examples [@Glymour1980; @Christensen1999], though it has been argued that $l$ fares well with certain aspects of this problems [@EF2000].
 
 Second, there are some potentially interesting cases our empirical study has not examined. One set of cases would be strong evidence for highly implausible or against nearly certain claims. For instance, the kind of evidence that could move someone from $P(H) = .01$ to $P(H|E) = .1$. Such a case of evidence would score a relatively large value for $l$ (approximately equivalent to moving from $P(H) = .50$ to $P(H|E) = .90$), but would still leave a reasoner quite skeptical. It is not intuitive to imagine how people would rate such evidence, and these sorts of cases may pose problems for intuitions about $l$ not identified here. 
+
+Finally, there are persistent biases in human probability judgments that pose a general challenge to measurement in this arena [e.g. @kahneman.etal1982; @kahneman2011]. Two recent theories of probability judgments have explained a host of observed biases by proposing that people's probability judgments are shrunk toward .50 by varying degrees [@costello.watts2014; @zhu.etal2020]. This scaling could potentially induce non-monotonicity in observed updates despite equivalent "true" updates for the measures $l$, $r$, and $z$, so it is possible the shortcomings of $r$ and $z$ may be partially explained by these biases. Nevertheless, as calculated from observed probability judgments, $l$ provides a measure of confirmation that reliably comports with commonsense notions.
 
 ## Conclusions
 

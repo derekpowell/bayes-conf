@@ -36,7 +36,7 @@
 \usepackage{apacite}
 
 % KM added 1/4/18 to allow control of blind submission
-
+\cogscifinalcopy
 
 \usepackage{color}
 
@@ -82,7 +82,7 @@ track commonsense notions of evidential strength. We demonstrate how
 these measures can be computed from participants' belief reports, and
 identify cases where the measures come apart in their characterization
 of participants' belief updating. In so doing, this project seeks to
-build a connections between investigations of psychological belief
+build connections between investigations of psychological belief
 updating processes and formal epistemic theories of confirmation.
 
 \textbf{Keywords:}
@@ -186,7 +186,7 @@ conditions:
 \item
   Communitivity Symmetry (CS): \(\mathbf{c}(H,E)=-\mathbf{c}(E, H)\)
 \item
-  Hypothesis Symmetry (HS): \(\mathbf{c}(H,E)= \mathbf{c}(\neg H, E)\)
+  Hypothesis Symmetry (HS): \(\mathbf{c}(H,E)= \mathbf{c}(H, \neg E)\)
 \end{itemize}
 
 Eells and Fitelson argue ES and CS are not generally valid or desirable
@@ -459,9 +459,9 @@ median age 36 years).
 Four brief educational vignettes were created to correct common
 misconceptions about four different topics. The four topics were 1) the
 anthropogenic nature of climate change, 2) the dangers of skin contact
-with Fentanyl, 3) the economic impacts of major sports stadium
-construction, and 4) the effectiveness of education tailored to
-individual ``learning styles''.
+with Fentanyl, 3) the effectiveness of education tailored to individual
+``learning styles,'' and 4) the economic impacts of major sports stadium
+construction.
 
 Each of these vignettes were designed to provide evidence for or against
 a more specific belief. Participants were asked to report their beliefs
@@ -487,7 +487,7 @@ persuasive''.
 
 }
 
-\caption[Average confirmation across persuasiveness ratings for each confirmation measure (facets) and topic (line colors)]{Average confirmation across persuasiveness ratings for each confirmation measure (facets) and topic (line colors). Error bars represent one standard error.}\label{fig:fig2}
+\caption[Average confirmation across persuasiveness ratings for each confirmation measure (facets) and topic (line colors)]{Average confirmation across persuasiveness ratings for each confirmation measure (facets) and topic (line colors). Error bars represent one standard error. Persuasiveness ratings concern confirmatory evidence for the climate topic and disconfirmatory evidence for all others. Thus, a well-behaved measure would be indicated by a monotonically increasing trend for climate and monotonically decreasing trends for all other topics.}\label{fig:fig2}
 \end{figure*}
 \end{CodeChunk}
 
@@ -630,6 +630,19 @@ is not intuitive to imagine how people would rate such evidence, and
 these sorts of cases may pose problems for intuitions about \(l\) not
 identified here.
 
+Finally, there are persistent biases in human probability judgments that
+pose a general challenge to measurement in this arena (Kahneman, 2011;
+e.g. Kahneman, Slovic, \& Tversky, 1982). Two recent theories of
+probability judgments have explained a host of observed biases by
+proposing that people's probability judgments are shrunk toward .50 by
+varying degrees (Costello \& Watts, 2014; Zhu, Sanborn, \& Chater,
+2020). This scaling could potentially induce non-monotonicity in
+observed updates despite equivalent ``true'' updates for the measures
+\(l\), \(r\), and \(z\), so it is possible the shortcomings of \(r\) and
+\(z\) may be partially explained by these biases. Nevertheless, as
+calculated from observed probability judgments, \(l\) provides a measure
+of confirmation that reliably comports with commonsense notions.
+
 \hypertarget{conclusions}{%
 \subsection{Conclusions}\label{conclusions}}
 
@@ -654,7 +667,7 @@ commonsense notions of belief updating.
 \noindent
 
 \hypertarget{refs}{}
-\begin{CSLReferences}
+\begin{CSLReferences}{1}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-battaglia.etal2013}{}}%
 Battaglia, P. W., Hamrick, J. B., \& Tenenbaum, J. B. (2013). Simulation
 as an engine of physical scene understanding. \emph{Proceedings of the
@@ -681,6 +694,12 @@ Cook, J., \& Lewandowsky, S. (2016). Rational {Irrationality}:
 {Modeling} {Climate} {Change} {Belief} {Polarization} {Using} {Bayesian}
 {Networks}. \emph{Topics in Cognitive Science}, \emph{8}(1), 160--179.
 http://doi.org/\href{https://doi.org/10.1111/tops.12186}{10.1111/tops.12186}
+
+\leavevmode\vadjust pre{\hypertarget{ref-costello.watts2014}{}}%
+Costello, F., \& Watts, P. (2014). Surprisingly rational: {Probability}
+theory plus noise explains biases in judgment. \emph{Psychological
+Review}, \emph{121}(3), 463--480.
+http://doi.org/\href{https://doi.org/10.1037/a0037010}{10.1037/a0037010}
 
 \leavevmode\vadjust pre{\hypertarget{ref-CTG2007}{}}%
 Crupi, V., Tentori, K., \& Gonzalez, M. (2007). On bayesian measures of
@@ -747,6 +766,15 @@ http://doi.org/\href{https://doi.org/10.1037/a0035941}{10.1037/a0035941}
 Joyce, J. (1999). \emph{The foundations of causal decision theory}.
 Cambridge: Cambridge University Press.
 
+\leavevmode\vadjust pre{\hypertarget{ref-kahneman2011}{}}%
+Kahneman, D. (2011). \emph{Thinking, {Fast} and {Slow}} (1st edition).
+New York: Farrar, Straus; Giroux.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kahneman.etal1982}{}}%
+Kahneman, D., Slovic, P., \& Tversky, A. (1982). \emph{Judgment {Under}
+{Uncertainty}: {Heuristics} and {Biases}}. (D. Kahneman, P. Slovic, \&
+A. Tversky, Eds.). Cambridge University Press.
+
 \leavevmode\vadjust pre{\hypertarget{ref-Milne1996}{}}%
 Milne, P. (1996). \emph{Log{[}p(h/eb)/p(h/b){]}} is the one true measure
 of confirmation. \emph{Philosophy of Science}, \emph{63}, 21--26.
@@ -790,6 +818,13 @@ http://doi.org/\href{https://doi.org/10.1126/science.1192788}{10.1126/science.11
 \leavevmode\vadjust pre{\hypertarget{ref-TCBO2007}{}}%
 Tentori, K., Crupi, V., Bonini, N., \& Osherson, D. (2007). Comparision
 of confirmation measures. \emph{Cognition}, \emph{103}, 107--119.
+
+\leavevmode\vadjust pre{\hypertarget{ref-zhu.etal2020}{}}%
+Zhu, J.-Q., Sanborn, A. N., \& Chater, N. (2020). The {Bayesian}
+sampler: {Generic} {Bayesian} inference causes incoherence in human
+probability judgments. \emph{Psychological Review}, \emph{127}(5),
+719--748.
+http://doi.org/\href{https://doi.org/10.1037/rev0000190}{10.1037/rev0000190}
 
 \end{CSLReferences}
 
