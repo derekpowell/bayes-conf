@@ -79,9 +79,9 @@ To begin, Eells and Fitelson [-@EF2002] use symmetries related to confirmation t
 
 - Evidence Symmetry (ES): $\mathbf{c}(H,E)=-\mathbf{c}(H, \neg E)$
 
-- Communitivity Symmetry (CS): $\mathbf{c}(H,E)=-\mathbf{c}(E, H)$
+- Communitivity Symmetry (CS): $\mathbf{c}(H,E)=\mathbf{c}(E, H)$
 
-- Hypothesis Symmetry (HS): $\mathbf{c}(H,E)= \mathbf{c}(H, \neg E)$
+- Hypothesis Symmetry (HS): $\mathbf{c}(H,E)= -\mathbf{c}(\neg H, E)$
 
 Eells and Fitelson argue ES and CS are not generally valid or desirable while HS is. To see this, they consider an example in which a card is drawn from a fair deck. Let $H$ be the claim that the card is black and $E$ be the claim that the card is a seven of spades. That the card is a seven of spades ($E$) is decisive evidence that the card is black ($H$). But that the card is not a seven of spades ($\neg E$) is not decisive evidence against the claim that the card is black ($H$). This falsifies ES, which claims that the degree to which $E$ confirms $H$ is equal to the degree to which $\neg E$ disconfirms.
 
